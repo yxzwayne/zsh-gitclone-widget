@@ -1,4 +1,9 @@
-For my macOS users
+For my macOS users.
+
+## Features
+
+- **Direct Git URL Handling:** Paste SSH or HTTPS Git URLs directly into the terminal and clone repositories with a single Enter key press.
+- **URL Validation:** Checks if the Git URL is valid before attempting to clone.
 
 The way I use it is to copy the content in the shell file (or just below) and paste into the `.zshrc` on my Mac.
 
