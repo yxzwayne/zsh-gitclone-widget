@@ -13,7 +13,7 @@ Here's the shell content anyway.
 function git_url_preprocess_widget() {
     local CMD_LINE="$BUFFER"
     if [[ $CMD_LINE =~ ^git@github.com:.+\/.+\.git$ || $CMD_LINE =~ ^https:\/\/github.com\/.+\/.+\.git$ ]]; then
-        echo "\nEncountered git url, checking validity..."
+        echo -e "\033[93m\nEncountered git url, checking validity...\033[0m"
         if git ls-remote "$CMD_LINE" &>/dev/null; then
             BUFFER="git clone $CMD_LINE"
         else
